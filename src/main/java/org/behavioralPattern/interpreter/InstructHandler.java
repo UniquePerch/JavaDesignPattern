@@ -23,7 +23,7 @@ public class InstructHandler {
                 right = new SentenceNode(direction,action,distance);
                 stack.push(new AndNode(left,right));
             }
-            else{
+            else{ //如果不是and语法
                 String word1 = words[i];
                 direction = new DirectionNode(word1);
                 String word2 = words[++i];
